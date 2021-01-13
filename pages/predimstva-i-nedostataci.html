@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTTP/2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar" role="navigation">
+            <div class="navbar-logo">
+               <a class="logo-image" href="../index.html"><img src="../images/http2-logo.png" alt="logo"></a> 
+            </div>
+           <div id="menuToggle">
+             <input type="checkbox" />
+               <span></span>
+               <span></span>
+               <span></span>
+           <ul id="menu">
+            <li class="nav-item"><a class="nav-link " href="../index.html">Начало</a></li>
+            <li class="nav-item"><a class="nav-link" href="sitemap.html">Карта на сайта</a></li>
+            <li class="nav-item"><a class="nav-link" href="izpolzvani-iztochnici.html">Използвани източници</a></li>
+            <li class="nav-item"><a class="nav-link" href="kontakti.html">Контакти</a></li>
+           </ul>
+          </div>
+         </nav>
+        <div class="container">
+            <div class="section">
+                <div class="sidebar col-1">
+                    <div class="sidebar-content">
+                        <h4><a href="index.html">Начало</h4>
+                            <ul class="custom-list">
+                                <li><a href="istoria.html">История</a></li>
+                                <li><a href="predimstva-i-nedostataci.html">Предимства и недостатъци</a></li>
+                                <li><a href="izpolzvani-termini.html">Използвани термини</a></li>
+                            </ul>
+                        <h4><a href="sitemap.html">Карта на сайта</a></h4>
+                        <h4><a href="izpolzvani-iztochnici.html">Използвани източници</a></h4>
+                        <h4><a href="kontakti.html">Контакти</a></h4>
+                    </div>
+                </div>
+                <div class="content col-9">
+                    <div class="content-section pd-1">
+                    <div class="content-section pd-1">
+                        <h2 style="margin-top:0; padding-top:0;">Предимства</h2>
+                        <ul class="custom-list">
+                            <li>
+                                <span>HTTP/2 e  <strong> бинарен</strong>, а не <strong> текстов</strong> протокол.</span>
+                            </li>
+                            
+                            <li>
+                                <span>HTTP/2 е напълно <strong> мултиплексиран.</strong></span>
+                            </li>
+                            
+                            <li>
+                                <span>HTTP/2 използва header compression <strong><em>HPACK</em></strong>.</span>
+                            </li>
+                            
+                            <li>
+                                <span>HTTP/2 позволява на сървъра да <strong><em>"push"-ва ресурси</em></strong>.</span>
+                            </li>
+                            
+                            <li>
+                                <span>HTTP/2 намалява <strong><em>Round Trip Times (RTT)</em></strong>.</span>
+                            </li>
+
+                            <li>
+                                <span>Не е необходим <strong><em>Domain Sharding</em></strong>.</span>
+                            </li>
+                        </ul>
+                        <br>
+                        <img src="../images/http2-domain-sharding.png" width="80%">
+
+                        <br><br>
+                        <ul class="custom-list"> 
+                            <li>
+                                <span>Поддържа се от по-голямата част от браузърите, както може да се види на графиката по-долу.</span>
+                            </li>
+                        </ul>
+                        <img src="../images/http2-browser-compatibility.png" width="80%">
+                            
+                        <h2>Недостатъци</h2>
+                        <p>Първо трябва да споменем, че към днешна дата все още няма по-добра алтернатива на HTTP/2. Въпреки многобройните му предимства, протоколът има и своите недостатъци, които трябва да отбележим. Експертите очакват тези проблеми да бъдат разрешени във версия HTTP/3, но засега остава да разгледаме недостатъците на съществуващия HTTP/2.</p>
+                        <br>
+                        <ul class="custom-list">
+                            <li>
+                                <span class="bulletpoints-description"><strong>Не е много бърз и не е много модерен. </strong> Очакваше се във версия /2 да има много повече feature-и, които в крайна сметка не са част от крайния продукт. Основната причина е, че версия /2 трябва да бъде съвместима с версия /1.1, като използва еднакви POST и GET заявки и codes of status (200, 301, 404 и 500). </span>                          
+                            </li>
+
+                            <li>
+                                <span class="bulletpoints-description"><strong>Криптирането на информация не е задължително.</strong> Преди години, криптирането беше ограничено предимно до финансови транзакции, но хакерските атаки са осъществими заплахи, които могат да донесат усложнения в личен и бизнес план. Криптирането може да ни защити от подобни атаки, но след дълго обсъждане, разработчиците решиха да оставят логиката същата, както в HTTP/1.1. Това означава, че собствениците на уебсайтове може да те защитят сайтовете си и да изложат потребителите си на риск. За да използваме криптиране на информация в HTTP/2, трябва да има активиран SSL/TLS сертификат, подобно на HTTPS. </span> 
+                            </li>
+                            <li>
+                                <span class="bulletpoints-description"><strong>Проблемът с бисквитките остава.</strong> Един от най-големите провали по отношение на сигурност в HTTP/1.1 са бисквитките - текстови (.txt) файлове, които съдържат информация за клиента и могат да бъдат част от HTTP заявка към сървър (сайт). Използвайки тези файлове, сървърът може да идентифицира клиента, да запази сесията му (за да не изисква повторно потребителско име и парола, например) или да му покаже персонализирани реклами (използвайки запазената информация за неговия пол, възраст, интереси и т.н.). На пръв поглед не изглежда като голям проблем, но в действителност тези “бисквитки” (файлове) могат да бъдат откраднати от хакери, които да получат информация и достъп до имейл адреса, социалните мрежи и други сайтове, използвани от потребителя, които съдържат лична информация. А най-притеснителното е, че дори не е необходима парола! Тези атаки се наричат cross-site scripting (XSS) атаки.</span>
+
+                            </li>
+                        </ul>
+                        <a href="../pages/izpolzvani-termini.html" class="button">Към използвани термини</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="footer">
+            <div class="footer-img-logo"><img src="../images/http2-logo.png" alt="logo"></div>
+            <!-- <div class="footer-text-logo">HTTP/2</div> -->
+            <div class="footer-content">
+                <div class="content-logo"><img src="../images/http2-logo.png" alt="logo"></div>
+                <div class="content-sitemap">
+                    <span class="footer-heading">Карта</span>
+                    <span class="sitemap-links"><a href="../index.html">Начало</a></span>
+                    <span class="sitemap-links"><a href="istoria.html">История</a></span>
+                    <span class="sitemap-links"><a href="predimstva-i-nedostataci.html">Предимства и недостатъци</a></span>
+                    <span class="sitemap-links"><a href="izpolzvani-termini">Използвани термини</a></span>
+                    <span class="sitemap-links"><a href="izpolzvani-iztochnici.html">Използвани източници</a></span>
+                </div>
+                <div class="content-contacts">
+                    <span class="footer-heading">Контакти</span>
+                    <span class="contact-item"><i class="fa fa-user"></i>Мирела Васева</span>
+                    <span class="contact-item"><i class="fa fa-id-card"></i>121217047</span>
+                    <span class="contact-item"><i class="fa fa-envelope"></i><a href="mailto:mirelavaseva1@gmail.com">mirelavaseva1@gmail.com</a></span>
+                    <span class="contact-item"><i class="fa fa-envelope"></i><a href="mailto:mvaseva@tu-sofia.bg">mvaseva@tu-sofia.bg</a></span>
+                </div>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

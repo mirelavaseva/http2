@@ -1,0 +1,138 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTTP/2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+         <nav class="navbar" role="navigation">
+             <div class="navbar-logo">
+                <a class="logo-image" href="index.html"><img src="images/http2-logo.png" alt="logo"></a> 
+             </div>
+            <div id="menuToggle">
+              <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+            <ul id="menu">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Начало</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/sitemap.html">Карта на сайта</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/izpolzvani-iztochnici.html">Използвани източници</a></li>
+              <li class="nav-item"><a class="nav-link" href="pages/kontakti.html">Контакти</a></li>
+            </ul>
+           </div>
+          </nav>
+        <div class="container">
+            <header class="header">
+                <div class="header-content">
+                    <div class="content-text">
+                        <h1>HTTP/2 - обновената версия на HTTP протокола.</h1>
+                    </div>
+                    <div class="content-image">
+                        <img src="images/https2-icon.png" alt="alt">
+                    </div>
+                    
+                </div>
+                <a href="#za-http2" class="button">За HTTP/2</a>
+                <a href="#izpolzvani-termini" class="button">Използвани термини</a>
+            </header>
+            <div id="za-http2" class="section">
+                <div class="sidebar">
+                    <div class="sidebar-content">
+                        <h4><a href="index.html">Начало</h4>
+                            <ul class="custom-list">
+                                <li><a href="pages/istoria.html">История</a></li>
+                                <li><a href="pages/predimstva-i-nedostataci.html">Предимства и недостатъци</a></li>
+                                <li><a href="pages/izpolzvani-termini.html">Използвани термини</a></li>
+                            </ul>
+                        <h4><a href="pages/sitemap.html">Карта на сайта</a></h4>
+                        <h4><a href="pages/izpolzvani-iztochnici.html">Използвани източници</a></h4>
+                        <h4><a href="pages/kontakti.html">Контакти</a></h4>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="content-section pd-1">
+                        <h4>HTTP/2 е обновената версия на HTTP протокола, използван световната мрежа World Wide Web (WWW). Основната роля на протокола е да пренася данни в Уеб. Ето защо бе необходимо и основният протокол, отговорен за доставянето на информация в Интернет, да бъде обновен с втората си основна версия HTTP/2.
+                            <br><br>Целта на обновения HTTP/2 протокол е цялостно да подобри представянето на уеб страниците, оптимизирайки работата на HTTP протокола и повишавайки скоростта, с която се пренасят данните и се обменят със сървъра. Основният HTTP протокол не е променен в същността си, но нуждата от подобрения в скоростта на зареждане и нови функционалности, наложи старият протокол да бъде обновен.
+                        </h4>
+                        
+                    </div>
+                    <div class="content-section pd-1">
+                        <h2>Подобрения в HTTP/2 протокола</h2>
+                        <p>HTTP/2 е <strong>бинарен (двоичен)</strong>, а не текстов протокол, което го прави по-кратък и производителен. Бинарният протокол използва мултиплексиране на връзката клиент - сървър.</p>
+                        <br><br>       
+                        <p>HTTP/2 е <strong>напълно мултиплексиран</strong>. Това означава, че той може да изпраща множество заявки за информация паралелно, използвайки една-единствена <em>TCP</em> връзка.</p>
+                        <br><br>
+                        <img src="images/http2-multiplexing.jpg" alt="" width="100%">
+                        <br><br>
+                        <p><strong>Компресирани хедъри</strong> със специално създадения <em>HPACK</em> - помага за намаляване обема на постоянно обменящите се хедъри (пакети от информация ) между сървъра и клиента, което оказва влияние върху бързината на сайта.</p>
+                        <br><br>
+                        <p>HTTP/2 има сложна схема на приоритизиране - подаваме към браузърите коя информация приоритетно да се зарежда спрямо друга. Например, задаваме на браузър, поддържащ HTTP/2 първо да зареди HTML-a за страницата, след това CSS и JavaScript-a, а за края да остави изображенията. Тази подредба позволява браузърите да зареждат страниците максимално бързо и да доставят важната информация първа.</p>
+                        <br><h4>Пример:</h4>
+                        <p>Как би заредила една категорийна страница на обикновен онлайн магазин, използвайки схемата за приоритизиране на HTTP/2.</p>
+                        <p>1. <img src="images/html-1.png" width="30px"> HTML файлът за страницата - <strong>1 ресурс</strong></p>
+                        <p>2. <img src="images/css-1.png" width="30px"> 1 външен stylesheet (CSS файл) - <strong>1 ресурс</strong></p> 
+                        <p>3. <img src="images/script-1.png" width="30px"> 4 външни scripts (JavaScript) - тъмнооранжевите са <em>blocking scripts</em>, a светлите - <em>asynchronous scripts</em> - <strong>4 ресурсa</strong></p>
+                        <p>4. <img src="images/font-1.png" width="30px"> 1 персонализиран (custom) уеб шрифт - <strong>1 ресурс</strong></p> 
+                        <p>5. <img src="images/image-1.png" width="30px"> 13 изображения. Първите 5 тъмнолилави кутийки представляват логото и първите 4 снимки на продукти, които се виждат на първи екран; останалите 8 светлолилави кутийки са други 8 изображения на продукти, които се виждат чак след скрол. - <strong>13 ресурсa</strong></p> 
+                        <br>
+                        <p>За целта на примера приемаме, че всички ресурси по-горе са с еднакъв размер и всяка зарежда в браузъра на потребителя за 1 секунда, което означава, че крайното време за зареждане е <strong>20 секунди</strong>. Това, което прави голямата разлика от гледна точка на user experience обаче, е начинът и последователността на зареждане на всеки от ресурсите. На схемата може да се наблюдава тази последователност:</p>
+                        <br>
+                        <img src="images/http2-loadingtime.png" alt="" width="100%">
+                        <br><br>
+                        <p>Както може да видите, в първата 1 секунда от зареждането потребителят ще види само HTML структурата на страницата. След изминаване на 2 секунди, той вижда CSS-a, след това блокиращия JavaScript, визуализация на персонализирания шрифт (а не системен), първите 5 изображения, които са видими на първия екран, след това асинхронния JS и на последно място - 8 ресурса, които са видими чак след като скролнем надолу по страницата.
+                        <br><br>
+                        <p>20 секунди време на зареждане не са никак малко, но използвайки приоритета на зареждане по-горе, потребителят вижда в правилния момент информацията, която може да асимилира. Не е по-важно да се заредят последните 8 изображения например, които дори не се виждат на страницата първоначално, за сметка на CSS-a.
+                        <br> <br>           
+                        <p>Още по темата може да прочетете в статията <a href="https://blog.cloudflare.com/better-http-2-prioritization-for-a-faster-web/" target="_blank">Better HTTP/2 Prioritization for a Faster Web</a> от блога на Cloudflare.</p>
+                        <br><br>
+                        <p><strong><em>Stream dependencies</em></strong> - клиентът посочва на сървъра ресурсите с най-висок приоритет</p>
+                        <br><br>
+                        <p><strong><em>Server push</em></strong> - сървърът изпраща ресурси, за които клиентът не е подал заявка. Това забавя латенцията, когато се зарежда множество различно по вид съдържание.</p>                   
+                    </div>
+                    <div class="content-section pd-1">
+                        <br><br>
+                        <p>След като разгледахме основата на HTTP/2, нека преминем към историята на създаването му. </p>
+                        <a href="pages/istoria.html" class="button">Към история</a>
+                    
+                    </div>
+                    
+    
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-img-logo"><img src="images/http2-logo.png" alt="logo"></div>
+            <div class="footer-content">
+                <div class="content-logo"><img src="images/http2-logo.png" alt="logo"></div>
+                <div class="content-sitemap">
+                    <span class="footer-heading">Карта на сайта</span>
+                    <span class="sitemap-links"><a href="index.html">Начало</a></span>
+                    <span class="sitemap-links"><a href="pages/istoria.html">История</a></span>
+                    <span class="sitemap-links"><a href="pages/predimstva-i-nedostataci.html">Предимства и недостатъци</a></span>
+                    <span class="sitemap-links"><a href="pages/izpolzvani-termini.html">Използвани термини</a></span>
+                    <span class="sitemap-links"><a href="pages/izpolzvani-iztochnici.html">Използвани източници</a></span>
+                </div>
+                <div class="content-contacts">
+                    <span class="footer-heading">Контакти</span>
+                    <span class="contact-item"><i class="fa fa-user"></i>Мирела Васева</span>
+                    <span class="contact-item"><i class="fa fa-id-card"></i>121217047</span>
+                    <span class="contact-item"><i class="fa fa-envelope"></i><a href="mailto:mirelavaseva1@gmail.com">mirelavaseva1@gmail.com</a></span>
+                    <span class="contact-item"><i class="fa fa-envelope"></i><a href="mailto:mvaseva@tu-sofia.bg">mvaseva@tu-sofia.bg</a></span>
+                </div>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

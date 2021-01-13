@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HTTP/2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;0,900;1,300;1,600;1,900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav class="navbar" role="navigation">
+            <div class="navbar-logo">
+               <a class="logo-image" href="../index.html"><img src="../images/http2-logo.png" alt="logo"></a> 
+            </div>
+           <div id="menuToggle">
+             <input type="checkbox" />
+               <span></span>
+               <span></span>
+               <span></span>
+           <ul id="menu">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Начало</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/sitemap.html">Карта на сайта</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/izpolzvani-iztochnici.html">Използвани източници</a></li>
+            <li class="nav-item"><a class="nav-link" href="../pages/kontakti.html">Контакти</a></li>
+           </ul>
+          </div>
+         </nav>
+        <div class="container">
+            <div class="section">
+                <div class="sidebar col-1">
+                    <div class="sidebar-content">
+                        <h4><a href="../index.html">Начало</h4>
+                            <ul class="custom-list">
+                                <li><a href="../pages/istoria.html">История</a></li>
+                                <li><a href="../pages/predimstva-i-nedostataci.html">Предимства и недостатъци</a></li>
+                                <li><a href="../pages/izpolzvani-termini.html">Използвани термини</a></li>
+                            </ul>
+                        <h4><a href="../pages/sitemap.html">Карта на сайта</a></h4>
+                        <h4><a href="../pages/izpolzvani-iztochnici.html">Използвани източници</a></h4>
+                        <h4><a href="../pages/kontakti.html">Контакти</a></h4>
+                    </div>
+                </div>
+                <div class="content col-9">
+                    <div class="content-section pd-1">
+                        <h4><strong>HTTP (HyperText Transfer Protocol)</strong> е най-често използвания мрежови протокол в Интернет. Целта на HTTP е да предостави метод за публикуване и получаване на HTML страници. Ресурси, които са заявени използвайки HTTP или HTTPS са идентифицирани от URI (Uniform Resource Identifier).</h4> 
+                        <br>
+                        <h4>Въпреки че HTTP/1.1 ни служи вярно повече от 10 години, HTTP/2 е бъдещето, към което сме се насочили. Нека разгледаме все пак историята, през която преминава HTTP, за да достигне до HTTP/2.</h4>
+                    </div>
+                    <div class="content-section pd-1">
+                        <h2>Да разгледаме историята...</h2>
+                        <ol>
+                            <li>
+                            <h3>HTTP/0.9</h3>
+                            <p>Най-ранният прототип на HTTP, публикуван през 1991. Той е много опростен, поддържа само <em>GET метода</em> и не поддържа <em>MIME типове</em> и различни HTTP хедъри.</p>
+                            </li>
+                            
+                            <li><h3>HTTP/1.0</h3>
+                            <p>Публикуван през 1996, той е базиран на HTTP/0.9 и добавя много различни методи, HTTP хедъри, както и обработката на мултимедийни обекти.</p>
+                            <br>
+                            <p>Към GET метода се добавят POST и HEAD методите, които обогатяват връзката браузър - сървър. Използвайки този протокол, можеш да изпращаш съдържание от всякакъв формат. Освен текст, през интернет вече може да се трансферират още снимки, видео, дори бинарни файлове, което поставя основите за развитието на интернет.</p> 
+                            <br>
+                            <p>Форматът на HTTP заявките също се променя. Освен самата информация, всяка комуникация трябва да съдържа HTTP хедър, който описва важна метадата.</p> 
+                            <br>
+                            <p>Въпреки, че HTTP/1.0 представя множество революционни промени и подобрения, той все пак има своите недостатъци. Основно - всяка TCP връзка може да изпраща само 1 заявка и след получаване на информацията, връзката прекъсва. Ако искаш да заявиш още ресурси, за всеки трябва да се свързваш наново.</p> 
+                            </li>
+                            
+                            <li><h3>HTTP/1.1</h3>
+                            <p>Версия 1.1 на HTTP протокола беше официално публикувана през 1999 и тя е най-широко използвания HTTP протокол. В нея са променени и поправени структурните дефекти на версия 1.0, добавени са някои feature-и, други са премахнати, но най-важната разлика е поддръжката на по-сложни уеб приложения.</p> 
+                            <br>
+                            <p>След повече от 20 години развитие и подобрение, HTTP/1.1  протокола е доста стабилен. В сравнение с преминаването oт 0.9 към 1.0, направените промени от 1.0 до 1.1 не са толкова много, но са достатъчно значими. И все пак, това е основният протокол, който се използва от потребителите през целия този период от време.</p>
+                            </li>
+                            
+                            <li><h3>SPDY</h3>
+                            <p>Протоколът SPDY (произнасяно “speedy”) е междинен протокол, разработван от Google, който основно решава проблема с ниската ефективност нa HTTP/1.1. Той е публикуван през 2009, а през 2015 година Google се отказва от поддръжката му, в полза на HTTP/2. Протоколът е терминиран през 2016 година.</p>
+                            </li>
+                            
+                            <li><h3>HTTP/2</h3>
+                            <p>HTTP/2 е най-новият HTTP протокол, който беше публикуван през май 2015. Той е поддържан от всички основни браузъри, като Chrome, Safari, Firefox и други. Научете повече за неговите предимства и недостатъци:</p>
+                            <br>
+                            <a href="../pages/predimstva-i-nedostataci.html" class="button">Към предимства и недостатъци</a>
+                            
+                            </li>
+                            
+                        </ol>
+                            
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-img-logo"><img src="../images/http2-logo.png" alt="logo"></div>
+            <!-- <div class="footer-text-logo">HTTP/2</div> -->
+            <div class="footer-content">
+                <div class="content-logo"><img src="../images/http2-logo.png" alt="logo"></div>
+                <div class="content-sitemap">
+                    <span class="footer-heading">Карта на сайта</span>
+                    <span class="sitemap-links"><a href="../index.html">Начало</a></span>
+                    <span class="sitemap-links"><a href="../pages/istoria.html">История</a></span>
+                    <span class="sitemap-links"><a href="../pages/predimstva-i-nedostataci.html">Предимства и недостатъци</a></span>
+                    <span class="sitemap-links"><a href="../pages/izpolzvani-termini">Използвани термини</a></span>
+                    <span class="sitemap-links"><a href="../pages/izpolzvani-iztochnici.html">Използвани източници</a></span>
+                </div>
+                <div class="content-contacts">
+                    <span class="footer-heading">Контакти</span>
+                    <span class="contact-item"><i class="fa fa-user"></i>Мирела Васева</span>
+                    <span class="contact-item"><i class="fa fa-id-card"></i>121217047</span>
+                    <span class="contact-item"><i class="fa fa-envelope"></i><a href="mailto:mirelavaseva1@gmail.com">mirelavaseva1@gmail.com</a></span>
+                    <span class="contact-item"><i class="fa fa-envelope"></i><a href="mailto:mvaseva@tu-sofia.bg">mvaseva@tu-sofia.bg</a></span>
+                </div>
+            </div>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
