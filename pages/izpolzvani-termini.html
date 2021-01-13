@@ -32,33 +32,92 @@
           </div>
          </nav>
         <div class="container">
-            <div id="izpolzvani-termini" class="section custom-section">
+            <div class="section custom-section">
                 <h1 style="text-align: center;">Използвани термини</h1>
                 <div class="section section-columns">
                     <div class="custom-collumn pd-3">
-                        <h4>Heading H4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia, placeat officiis at minus pariatur optio omnis cupiditate. Non temporibus minima ipsam id sunt modi maiores velit delectus, praesentium dolore.</p>
+                        <h4>TCP</h4>
+                        <p>Transmission Control Protocol (TCP) е комуникационен протокол, който фасилитира обмяната на съобщения между компютрите в мрежа. Той е най-често срещания протокол в мрежи, които използват интернет протокола (IP). Когато се използват заедно са познати като TCP/IP.</p>
+
+                        <p>TCP протоколът взема съобщения от даден сървър и ги разделя на пакети, които могат да бъдат препратени от устройствата в мрежата - суичове, маршрутизатори, портали за сигурност (security gateways) към крайната им точка. TCP номерира всеки пакет и ги пресглобява, преди да ги предаде към получателя. Поради това, че е connection-oriented, се уверява, че е установена и поддържана връзка, докато предаването на пакетите приключи. 
+                        </p>
                         
                     
                     </div>
                     <div class="custom-collumn pd-3">
-                        <h4>Heading H4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia, placeat officiis at minus pariatur optio omnis cupiditate. Non temporibus minima ipsam id sunt modi maiores velit delectus, praesentium dolore.</p>
+                        <h4>HPACK</h4>
+                        <p>Компресирането на хедъри с HPACK намалява техния размер по отношение на броя байтове, които се предават по време на връзката.</p> 
+
+                            <p>Използвайки HTTP/2, който използва формата HPACK за компресиране на хедъри, страниците ще се зареждат по-бързо с по-добро време за интерактивна реакция. Хедъра трябва да бъде изпратен само веднъж по време на цялата връзка, което води до значително намаляване на необходимото време за дистрибуция на пакета.</p>
+                            
+                            <p>С нарастването на използваемостта на мобилните устройства, заедно с по-сложните уебсайтове, които се нуждаят от все повече заявки за изобразяване на страница, компресирането на хедъри значително намалява времето за предаването им. Също така, те подобряват скоростта на трансфер и използването на честотната лента.
+                            </p>
                     </div>
                 </div>
                 <div class="section section-columns">
                     <div class="custom-collumn pd-3">
-                        <h4>Heading H4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia, placeat officiis at minus pariatur optio omnis cupiditate. Non temporibus minima ipsam id sunt modi maiores velit delectus, praesentium dolore.</p>
+                        <h4>Blocking script</h4>
+                        <p>Докато блокиращият скрипт не бъде напълно свален, парснат и изпълнен, рендирането на страницата не може да продължи. Затова блокиращите скриптове се изпълняват преди зареждането на по-голямата част от един сайт.</p>
                         
                     
                     </div>
                     <div class="custom-collumn pd-3">
-                        <h4>Heading H4</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quia, placeat officiis at minus pariatur optio omnis cupiditate. Non temporibus minima ipsam id sunt modi maiores velit delectus, praesentium dolore.</p>
+                        <h4>Asynchronous script</h4>
+                        <p>При асинхронните скриптове, външните скриптове зареждат асинхронно заедно с други уеб елементи в страницата.</p>
+                    </div>
+                </div>
+                <div class="section section-columns">
+                    <div class="custom-collumn pd-3">
+                        <h4>Stream dependencies</h4>
+                        <p>По време на зареждане на уеб страниците, сървърът използва зависимости, за да подобри производителността, като първо разпредели капацитета на честотната лента към най-важните трансфери на ресурси.</p>
+                        
+                    
+                    </div>
+                    <div class="custom-collumn pd-3">
+                        <h4>Server push</h4>
+                        <p>Сървърният пуш позволява на сървъра да изпрати ресурси към клиента, преди той да ги е поискал. Когато отворим една уеб страница например, още преди да сме заявили, че искаме да получил CSS stylesheet-a на сайта, той вече се подава към нас. Това спестява време на зареждане.</p>
+                    </div>
+                </div>
+                <div class="section section-columns">
+                    <div class="custom-collumn pd-3">
+                        <h4>GET method</h4>
+                        <p>Методът GET се използва за извличане на информация от дадения сървър с помощта на даден URI ((Uniform Resource Identifier)). Заявките, използващи GET, целят само да извличат данни и не трябва да оказват друг ефект върху данните. </p>
+                        
+                    
+                    </div>
+                    <div class="custom-collumn pd-3">
+                        <h4>POST method</h4>
+                        <p>Методът POST е метод за заявка. По проект, той изисква уеб сървърът да приема данните, затворени в тялото на съобщението за заявка, най-вероятно за тяхното съхраняване. Често се използва при качване на файл или при изпращане на попълнен уеб формуляр.</p>
+                    </div>
+                </div>
+                <div class="section section-columns">
+                    <div class="custom-collumn pd-3">
+                        <h4>HEAD method</h4>
+                        <p>Методът HEAD се използва за изискване на HTTP хедъри от сървъра. Заявката за HTTP HEAD е идентична със заявката GET, с изключение на това, че сървърът не трябва да връща тялото на съобщението в отговора. Заявките, използващи метода HTTP HEAD, трябва да извличат само данни (сървърът не трябва да променя състоянието си).</p>
+                        
+                    
+                    </div>
+                    <div class="custom-collumn pd-3">
+                        <h4>MIME type</h4>
+                        <p>Медийният тип (още познат като Multipurpose Internet Mail Extensions или MIME) е стандарт, който указва естеството и формата на документ, файл или комбинация от байтове.</p>
+                    </div>
+                </div>
+                <div class="section section-columns">
+                    <div class="custom-collumn pd-3">
+                        <h4>RTT</h4>
+                        <p>Времето за двупосочно пътуване (Round-trip time или RTT) е продължителността в милисекунди (ms), необходима на мрежовата заявка да премине от начална точка до дестинацията си и да се върне обратно до началната точка.</p>
+                        
+                    
+                    </div>
+                    <div class="custom-collumn pd-3">
+                        <h4>Domain sharding</h4>
+                        <p>Domain sharding е техника, използвана за увеличаване на количеството едновременно изтеглени ресурси за определен уебсайт. Тази техника се осъществява чрез използване на множество домейни. Това позволява на уебсайтовете да се доставят до потребителите по-бързо, тъй като те трябва да чакат да се приключи изтеглянето на предишния набор от ресурси, преди да започне изтеглянето на следващия набор.</p>
                     </div>
                 </div>
                 
+            </div>
+            <div class="content-section pd-1">
+                <a href="../index.html" class="button" style="width: 12%;">Към Начало</a>
             </div>
         </div>
         <div class="footer">
